@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-@app.route('/medidas',methods=['GET'])
+@app.route('/medidas/',methods=['GET'])
 def getMedida():
     n1 = float(request.args.get('n1'))
     n2 = float(request.args.get('n2'))
